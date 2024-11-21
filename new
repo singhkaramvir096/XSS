@@ -1,0 +1,3 @@
+username: ftp
+password: cyber
+multiple ip so nmap <ip> ftp 
